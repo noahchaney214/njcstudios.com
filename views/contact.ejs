@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NJC Studios - Contact</title>
+        <%- include('../fragments/imports'); %>
+    </head>
+    <body class="body">
+        <%- include('../fragments/header'); %>
+        <hr>
+        <div class="container">
+            <form class="bg-dark p-3 text-light" style="border-radius: 10px;" action="/contact" method="get">
+                <h2 style="color: white;">Contact Me</h2>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="fname" class="form-label">First Name</label>
+                        <input id="fname" type="text" class="form-control" placeholder="John" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <label for="lname" class="form-label">Last Name</label>
+                        <input id="lname" type="text" class="form-control" placeholder="Doe" aria-label="Last name">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleDataList" class="form-label">What is this for?</label>
+                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                    <datalist id="datalistOptions">
+                        <option value="General IT">
+                        <option value="Consulting">
+                        <option value="Software/Application Quote">
+                        <option value="Web Development Quote">
+                        <option value="Electronics Repair">
+                    </datalist>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <hr>
+        <%- include('../fragments/footer'); %>
+    </body>
+</html>

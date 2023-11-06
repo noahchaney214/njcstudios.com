@@ -1,0 +1,48 @@
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand title" href="/"><img src="white_logo.png" style="max-width: 60px;"> NJC Studios</a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end me-4" id="navbarSupportedContent" >
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <% if (title == 'About') { %>
+                    <a  href="/about" style="background-color: rgb(134, 168, 181);">About</a>
+                    <% } else { %>
+                    <a  href="/about">About</a>
+                    <% } %>
+                </li>
+                <li class="nav-item">
+                    <% if (title == 'Services') { %>
+                    <a  href="/services" style="background-color: rgb(134, 168, 181);">Services</a>
+                    <% } else { %>
+                    <a  href="/services">Services</a>
+                    <% } %>
+                </li>
+                <li class="nav-item ">
+                    <% if (title == 'Learn') { %>
+                    <a  href="/learn" style="background-color: rgb(134, 168, 181);">Learn</a>
+                    <% } else { %>
+                    <a  href="/learn">Learn</a>
+                    <% } %>
+                </li>
+                <li class="nav-item">
+                    <% if (title == 'Portfolio') { %>
+                    <a  href="/portfolio" style="background-color: rgb(134, 168, 181);">Portfolio</a>
+                    <% } else { %>
+                    <a href="/portfolio">Portfolio</a>
+                    <% } %>
+                </li>
+                <li class="nav-item ">
+                    <% if (title == 'Contact') { %>
+                    <a  href="/contact" style="background-color: rgb(134, 168, 181);">Contact</a>
+                    <% } else { %>
+                    <a  href="/contact">Contact</a>
+                    <% } %>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,158 @@
+body {
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+.body {
+  background-color: rgb(220, 220, 220);
+}
+
+/* Nav-bar header styling */
+@media only screen and (max-width: 990px)  {
+  .nav-item {
+    margin: 20px auto 20px auto;
+  }
+
+  .nav-item a{
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+    height: 35px;
+    width: 200px;
+    border-radius: 10px;
+  }
+} 
+
+@media only screen and (min-width: 990px)  {
+  .nav-item a { 
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+    padding: 15px 25px 15px 25px;
+    width: 45px;
+    height: 35px;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+} 
+
+
+.nav-item a:hover { 
+  background-color: rgb(160, 160, 160);
+}
+
+.navbar li a {
+  background-color: lightgray;
+}
+
+.navbar-nav {
+  margin-right: -30px;
+}
+
+nav button {
+  margin-right: 20px;
+}
+
+.navbar-brand {
+  padding-left: 10px;
+}
+
+.navbar-brand a.title {
+  margin-left: -15px;
+  font-size: 22px;
+}
+
+nav {
+  padding: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+/* Footer styling */
+
+footer {
+  border-radius: 0px 0px 10px 10px;
+}
+
+
+/* Index.ejs */
+
+.section {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: 375px;
+  display: flex;
+  align-items: center;
+}
+
+#section-1 {
+  background-image: url("Grande_Ronde.jpg");
+
+}
+
+#section-2 {
+  background-image: url("server.jpg");
+}
+
+#section-3 {
+  background-image: url("gh_graph.png");
+}
+
+#section-3 .row {
+  margin: auto;
+  width: 100%;
+  padding: 10px
+}
+
+.it-text2 { 
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  margin-left: -10%;
+  padding: 20px;
+  width: 50%;
+}
+
+.it-text3 { 
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  margin-left: 60%;
+  padding: 20px;
+  width: 50%;
+}
+
+@media only screen and (max-width : 1500px) {
+  .it-text2 { 
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    margin-left: 0%;
+    padding: 20px;
+    width: 50%;
+  }
+  
+  .it-text3 { 
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    margin-left: 50%;
+    padding: 20px;
+    width: 50%;
+  }
+}
+
+.it-text4, .it-text5 { 
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  display: block;
+  width: 100%;
+}
+
+.section a.btn  {
+  border-radius: 0;
+  border-color: black;
+  z-index: 2;
+}
+
+.section a.btn:hover, .navbar button:hover {
+  border-radius: 10px;
+  background-color: darkgray;
+  color: white;
+}
